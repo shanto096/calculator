@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my calculator</title>
+    <!-- link tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- <div class="text-teal-100"> -->
+    <div class="grid justify-items-center mt-5">
+         <h1 class="text-3xl font-bold text-teal-400 mb-4">My <span class="text-yellow-300">Calculator</span> </h1>
+        <div class="bg-slate-400 grid sm:grid-cols-4 grid-cols-4 gap-5 sm:grid-rows-6  justify-items-center rounded sm:h-[40rem] h-[35rem]  sm:w-4/12 mb-5 pb-10 px-5">
+            
+            <input id="result-text" type="text" value="" placeholder="0" class="col-span-4 bg-zinc-300 text-xl font-bold  ms:pb-5 mt-5 w-9/12 sm:h-14 rounded text-slate-700 pl-5">
+
+           <button onclick="calculate(7)" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">7</button>
+           <button onclick="calculate(8)" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">8</button>
+           <button onclick="calculate(9)" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">9</button>
+           <button onclick="calculate('+')" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">+</button>
+
+
+           <button onclick="calculate(4)" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">4</button>
+           <button onclick="calculate(5)" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">5</button>
+           <button onclick="calculate(6)" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">6</button>
+           <button onclick="calculate('-')" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">-</button>
+
+
+           <button onclick="calculate(1)" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">1</button>
+           <button onclick="calculate(2)" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">2</button>
+           <button onclick="calculate(3)" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">3</button>
+           <button onclick="calculate('*')" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">*</button>
+
+
+           <button onclick="calculate('%')" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">%</button>
+           <button onclick="calculate(0)" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">0</button>
+           <button onclick="calculate('.')" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">.</button>
+           <button onclick="calculate('/')" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">/</button>
+
+           <button class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">F</button>
+           <button onclick="clr()" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">c</button>
+           <button onclick="del()" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">Del</button>
+           <button onclick="finalResult()" class="bg-zinc-500 hover:bg-zinc-600 sm:w-24 focus:bg-zinc-700 focus:text-white w-20 text-2xl font-bold rounded-xl">=</button>
+
+
+
+            
+          
+           
+            
+</div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
